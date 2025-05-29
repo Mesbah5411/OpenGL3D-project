@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: clang++ build active file",
+            "command": "/bin/bash",
+            "args": [
+                "-c",
+                "export PATH=\"/opt/homebrew/bin:$PATH\" && export LDFLAGS='-L/opt/homebrew/lib' && export CPPFLAGS='-I/opt/homebrew/include' && clang++ -std=c++17 -arch arm64 -fdiagnostics-color=always -Wall -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -I/opt/homebrew/include -L/opt/homebrew/lib -include stdint.h -include stddef.h -include cstdlib -include cstring \"${workspaceFolder}/main.cpp\" \"${workspaceFolder}/glad.c\" -o \"${workspaceFolder}/app\" -lglfw -lglew -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo -framework CoreFoundation -Wno-deprecated"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compiler: /usr/bin/clang++"
+        }
+    ]
+}

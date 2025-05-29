@@ -1,0 +1,40 @@
+
+Keyboard Controls for 3D Interactive Scene
+------------------------------------------
+
+Key             | Function
+----------------|----------------------------------------------
+ESC             | Exit the application
+
+Camera Movement:
+W               | Move camera forward
+S               | Move camera backward
+A               | Move camera left
+D               | Move camera right
+
+Object Selection:
+1               | Select Cube
+2               | Select Pyramid
+3               | Select Sphere
+
+Object Translation:
+↑ (Up Arrow)    | Move object forward (−Z)
+↓ (Down Arrow)  | Move object backward (+Z)
+← (Left Arrow)  | Move object left (−X)
+→ (Right Arrow) | Move object right (+X)
+Z               | Move object upward (+Y)
+X               | Move object downward (−Y)
+
+Object Rotation:
+R               | Rotate object clockwise (Y-axis)
+T               | Rotate object counter-clockwise (Y-axis)
+F               | Tilt object upward (X-axis)
+G               | Tilt object downward (X-axis)
+
+Object Scaling:
++ (= key)       | Increase object scale
+-               | Decrease object scale
+
+Pyramid Auto-Rotation:
+N               | Enable auto-rotation of pyramid
+M               | Disable auto-rotation of pyramid
